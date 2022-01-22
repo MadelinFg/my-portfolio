@@ -1,2 +1,3 @@
 # my-portfolio
-Here you can find the projects I have developed as practice
+Welcome! Here you can find the projects I have developed as practice
+
