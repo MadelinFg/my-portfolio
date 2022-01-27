@@ -1,0 +1,595 @@
+/*
+    ESTILOS GENERALES PARA LANDING PAGE
+    Por: Madelin Flores
+    Fecha: Enero 2022
+    Email: madelinfg@gmail.com
+
+    Para ATOMS como prueba para adquirir el puesto de Web Developer
+*/
+:root {
+    --color-main: #a467d3;
+    --color-main-light: rgba(203, 193, 211, 0.932);
+    --color-main2: #6bbfce;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-gray: #faf9fb;
+}
+
+/* GENERAL */
+a {
+    color: var(--color-black) !important;
+    text-decoration: none !important;
+}
+a:hover{
+    color: var(--color-main) !important;
+}
+.btn-main, .btn-main2, .btn-main3 {
+    border-radius: 20px !important;
+    color: var(--color-white) !important;
+    padding: 0.3rem 1.5rem !important;
+}
+
+.btn-main { 
+    background-color: var(--color-main2) !important;  
+    border-color: var(--color-main2) !important;
+}
+.btn-main2 {
+    background-color: var(--color-main) !important; 
+    border-color: var(--color-main) !important;
+}
+.btn-main3 {
+    color: var(--color-main2) !important;
+    border-color: var(--color-main2) !important;
+    width: fit-content;
+}
+
+span {
+    color: var(--color-main);
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* / GENERAL */
+#navbarNavDropdown {
+    width: fit-content;
+}
+/* body {
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.container_img{
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    top: -45%;
+    right: -30%;
+    transform: rotateZ(-14deg);
+    border-radius: 0 0 0 3em;
+}
+  
+.media_img{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 0 2em;
+    background: white;
+    top: -2em;
+    left: 2em;
+} 
+  
+.media_img::before{
+    content: '';
+    position: absolute;
+    display: block;
+    transform: rotateZ(14deg);
+    width: 120%;
+    height: 120%;
+    top: 10%;
+    left: -10%;
+    background-image: url('./assets/bg.jpg');
+    background-position: center right;
+    background-size: cover;
+} */
+
+/* NAVBAR */
+.btn-getstarted {
+    border-color: var(--color-white) !important;
+}
+.container-fluid {
+    width: 85% !important;
+}
+
+.align-flex-end {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+}
+
+.ul-navbar-nav {
+    width: 800px !important;
+    justify-content: space-between;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-weight: 600 !important;
+    color: black !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--color-main2) !important;
+}
+/* / NAVBAR */
+
+/* HOME */
+.lbl-mobile-text {
+    display: none;
+}
+#home .row .div-intro {
+    margin-bottom: 2rem;
+    text-align: unset;
+    justify-content: center;
+}
+/* #home .row div.tab-pane:first-child {
+    margin: 0;
+} */
+#home {
+    margin-top: 4rem;
+}
+
+#sentence1 {
+    font-weight: 500;
+    color: var(--color-main2);
+}
+
+#sentence1 > span {
+    color: var(--color-main);
+}
+/* / HOME */
+
+/* CARD SIMULADOR DE CRÉDITO */
+.card{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+}
+.card-body {
+    display:flex;
+    flex-direction: column;
+}
+
+.card-body h5, .card-body hr, .card-body button {
+    margin: auto;
+}
+
+.card-body h5 {
+    font-weight: 700;
+}
+
+.card-body hr {
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    height: 2px !important;
+    color: var(--color-black);
+}
+
+.div-align-range {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.div-align-range label {
+    font-weight: 700;
+}
+
+.div-plazo {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.div-radios {
+    margin-top: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.div-radios .btn-secondary {
+    border-radius: 50px;
+    background-color: var(--color-white);
+    border-color: var(--color-main);
+    color: var(--color-black);
+}
+
+.div-radios input {
+    display: none;
+}
+.div-radios input:checked ~ label {
+    background-color: var(--color-main) !important;
+    border-color: var(--color-main) !important;
+    color: var(--color-white) !important;
+}
+.div-radios input:hover ~ label {
+    background-color: var(--color-main) !important;
+    border-color: 2px solid var(--color-gray) !important;
+    color: var(--color-white);
+}
+.div-radios label {
+    background: var(--bs-white);
+    border: 1px solid var(--bs-indigo);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+.div-inputs {
+    margin: 1rem 0 1.5rem;
+}
+
+.div-inputs .col-textos {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.div-inputs .col-textos label {
+    margin: 6px 0;
+    color: gray;
+}
+
+.div-inputs .col-inputs input{
+    border-radius: 20px;
+    margin: 4px 0;
+    border: 1px solid gray;
+    background-color: transparent;
+}
+/* / CARD SIMULADOR DE CRÉDITO */
+
+/* FEATURES */
+#features .header-section {
+    margin-bottom: 2rem;
+}
+
+#features .features-cards .col {
+    margin-bottom: 5rem;
+}
+/* / FEATURES */
+
+/* API */
+#API {
+    background-color: var(--color-gray);
+}
+
+#API .header-section, #clients, #pricing > .header-section, #features .header-section, #world .header-section {
+    padding: 5rem 8rem;
+}
+
+#API #home, #API #home .row {
+    display: flex;
+    flex-direction: column;
+}
+
+#API .div-code {
+    background-color: var(--color-white);
+    width: 90%;
+    margin: auto;
+    height: 400px;
+    max-height: 500px;
+    padding: 4rem 6rem;
+}
+#API .div-buttons {
+    background-color: #80808036;
+    width: 88%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+#API ul li button.active, #pricing ul li button.active {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid var(--color-main);
+    color: var(--color-black);
+}
+#API ul.nav{
+    justify-content: flex-end;
+    margin: 0 3.2rem;
+}
+#pricing ul.nav{
+    justify-content: center;
+    margin: 0 3.2rem;
+}
+#API .nav-link, #pricing .nav-link {
+    color: gray;
+}
+/* / API */
+
+/* PRICING */
+#pricing .nav-tabs {
+    border-bottom: none;
+}
+#pricing, #features, #API {
+    margin-top: 7rem;
+}
+
+#pricing #month {
+    display: flex;
+}
+
+#pricing .tab-content {
+    margin-top: 5rem;
+}
+
+#pricing .card {
+    border-radius: 0;
+    box-shadow: none;
+    border-right: 1px solid #dadbdb;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+#pricing .card:last-child {
+    border-right: none !important;
+}
+
+#pricing .card-body{
+    padding: 2rem 1rem;
+}
+
+#pricing .pricing-details, #FAQ ul {
+    list-style: none;
+}
+
+#pricing .pricing-details li:before, #FAQ ul li:before {
+    content: '✓';
+}
+
+#pricing .pricing-details li:last-child, #pricing .pro-card hr, #pricing .pro-card  ul del, #pricing #btn-pro-card {
+    color: var(--color-white)!important;
+}
+#pricing .pricing-details del {
+    color: gray;
+}
+
+#pricing .card-ultra li:last-child {
+    color: black !important;
+}
+
+#pricing .pro-card {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    background-color: var(--color-main);
+    color: var(--color-white) !important;
+}
+#pricing .pro-card .btn-main3 {
+    background-color: var(--color-main2);
+    color: var(--color-white);
+}
+#pricing .pro-card  ul li:last-child {
+    color: var(--color-main) !important;
+}
+
+#pricing .plan-price {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+#triangle-topleft {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 0;
+    border-top: 100px solid var(--color-main2);
+    border-right: 100px solid transparent;
+}
+
+.text-block {
+    width: 90px;
+    color: white;
+    position: relative;
+    top: -85px;
+    left: -5px;
+    padding:5px;
+    font-weight: 100;
+    transform: rotate(-45deg);
+}
+/* / PRICING */
+
+/* WORLD MAP */
+#world {
+    background-color: var(--color-gray);
+    background-image: url(./assets/world-bg.png);
+    margin: 5rem;
+    height: 1000px;
+}
+/* / WORLD MAP */
+
+/* FAQ */
+#FAQ > .row > .col-md-6:first-child {
+    padding: 0 11rem 0 0;
+}
+/* / FAQ */
+
+/* CLIENTS */
+#clients .col-md-4 {
+    max-height: 350px;
+    height: 330px;
+    background: var(--color-gray);
+    padding: 1.7rem;
+    width: auto;
+    max-width: 300px;
+}
+
+#clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#clients .clients-logo{
+    margin: 4rem 0;
+}
+#clients .clients-logo div{
+    padding: 10px;
+}
+/* CLIENTS */
+
+/* FOOTER */
+footer > .row, footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+}
+footer .social-icons > li > img {
+    width: 20px;
+}
+footer .social-icons > li{
+    padding: 0 1rem;
+}
+footer .col-md-2 ul li {
+    margin-bottom: 15px;
+}
+footer .down-footer .col-md-2 h4 {
+    margin-bottom: 1.5rem;
+}
+footer > .row:last-child {
+    display: flex;
+    flex-direction: column;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer .btn-getstarted{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .up-footer{
+    margin-bottom: 10rem;
+}
+footer .down-footer{
+    margin-bottom: 5rem;
+}
+footer #btn-getstarted {
+    padding: 1rem 3rem !important;
+}
+/* / FOOTER */
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 400px) {
+    #clients, #pricing > .header-section, #features .header-section, #world .header-section {
+        padding: 0;
+    }
+    
+    /* SIMULADOR DE CRÉDITO */
+    .div-plazo {
+        margin-top: 1rem;
+    }
+    .div-radios {
+        width: 100%;
+    }
+    /* / SIMULADOR DE CRÉDITO */
+    
+    /*API*/
+    #API .div-code {
+        padding: 2rem 3rem;
+    }
+    /* / API*/
+    
+    /*FAQ*/
+    #FAQ .container .row .col-md-6:first-child{
+        margin-bottom: 2rem;
+    }
+    /* / FAQ */
+
+    /* CLIENTS */
+    #clients .clients-logo div  {
+        padding: 1rem 25%;
+    }
+    /* / CLIENTS */
+}
+
+@media (max-width: 800px) {
+    /* HOME */
+    .div-inputs .col-textos {
+        display: none;
+    }
+    .lbl-mobile-text {
+        display: block;
+    }
+    #home .row div:first-child {
+        text-align: center!important;
+    }
+    #home .row div:last-child .card {
+        margin: auto;
+    }
+    /* / HOME */
+
+    #clients, #pricing > .header-section, #features .header-section, #world .header-section {
+        padding: 0 1rem;
+    }
+
+    /* API */
+    #API .header-section {
+        padding: 5rem 1rem;
+    }
+    /* / API */
+    
+    /*PRICING*/
+    #pricing #month {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #pricing #month .card {
+        margin-bottom: 1rem;
+        border-top: 1px solid #dadbdb;
+        border-bottom: 1px solid #dadbdb;
+        border-right: none;
+    }
+    /* / PRICING*/
+    
+    /* FAQ */
+    #FAQ > .row > .col-md-6:first-child, #FAQ > .row > .col-md-6 {
+        padding: 0 2rem;
+    }
+    /* / FAQ */
+
+    /* CLIENTS */
+    #clients {
+        margin-top: 3rem;
+    }
+    #clients .row div  {
+        margin: 1rem 0;
+    }
+    /* / CLIENTS */
+
+    /* FOOTER */
+    footer .up-footer .row {
+        flex-direction: column;
+    }
+    footer .up-footer {
+        margin-bottom: 4rem;
+    }
+    footer .down-footer {
+        padding: 0 2rem;
+    }
+    /* / FOOTER */
+}
