@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --main-blue: #383DA7;
+    --main-gray: #e5e5e5;
+
+    --status-entregado: #41A738;
+    --status-enEspera: #6AB1FE;
+    --status-enPreparacion: #EB8C1D;
+    --status-cancelado: #EA2929;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-letters {
+    color: var(--main-blue);
+}
+
+body {
+    background-color: var(--main-gray);
+}
+
+nav {
+    background-color: var(--main-blue);
+    color: white;
+    padding: 0.5rem 0 0 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 2.5rem;
+    color: var(--main-blue);
+}
+
+.header h3 {
+    font-size: 2rem;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border: 1px solid var(--main-blue) !important;
+    padding: 10px;
+    outline: none;
+}
+
+.pedido-modal-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pedido-modal-info input {
+    margin-bottom: 10px;
+}
+
+.tabla-pedidos {
+    background-color: white;
+    margin: 2rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.tabla-pedidos table {
+    width: 90%;
+}
+
+.tabla-pedidos table thead {
+    background-color: var(--main-blue);
+    border: none;
+    color: white;
+}
+
+.tabla-pedidos table thead th {
+    font-size: 22px;
+    font-weight: 400;
+    padding: 0.7rem;
+}
+
+.main-button {
+    padding: 5px 25px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    width: 200px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: space-evenly;
+}
+
+.statusDisabled {
+    opacity: 0.6;
+}
+
+.statusEntregado {
+    background-color: var(--status-entregado);
+}
+
+.statusEnEspera {
+    background-color: var(--status-enEspera);
+}
+.statusEnPreparacion {
+    background-color: var(--status-enPreparacion);
+}
+
+.statusCancelado {
+    background-color: var(--status-cancelado) !important;
+    color: white !important;
+}
+
+.tabla-pedidos tr td {
+    height: 60px;
+}
+
+.modal-content {
+    padding: 0 27px;
+}
+.modal-header, .modal-footer {
+    border: none !important;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: repeat(2, 270px);
+    grid-row-gap: 24px;
+    grid-column-gap: 76px;
+    padding: 20px 70px;
+}
+
+/* PRODUCTOS */
+.products {
+    margin: 2rem 2.5rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-row-gap: 25px;
+    justify-content: space-between;
+}
+
+.btn-registrar {
+    background-color: var(--main-blue) !important;
+    color: white !important;
+}
+
+.product-card {
+    box-shadow: 4px 4px rgb(0 0 0 / 25%);
+    width: 230px;
+    height: 267px;
+    border-radius: 10px;
+}
+
+.product-card img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.product-info {
+    padding: 10px 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px !important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info i {
+    cursor: pointer;
+}
+
+.product-modal-info {
+    display: flex;
+}
+
+.prod-info, .prod-description, .prod-img {
+    padding: 0 10px;
+}
+
+.prod-info input {
+    margin-bottom: 14px;
+}
+
+.prod-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+}
