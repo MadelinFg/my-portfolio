@@ -1,0 +1,13 @@
+:root {
+    --pink: #DF00A1;
+    --green: #3EFFB9;
+    --dark1: #111111;
+    --dark2: #333333;
+    --dark3: #555555;
+    --white: #FFFFFF;
+}
+
+#navbar, #hero {
+    width: 100%;
+    display: flex;
+}
