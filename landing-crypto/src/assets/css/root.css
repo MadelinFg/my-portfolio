@@ -7,10 +7,14 @@
     --dark3: #555555;
     --white: #FFFFFF;
 }
-
-#navbar, #hero, #info, #logos {
-    width: 100%;
-    display: flex;
+body {
+    margin: 0;
+}
+#navbar, #hero, .logos, footer {
+    padding: 0 70px;
+}
+#section, #info {
+    margin: 0 70px;
 }
 
 #notified {
@@ -21,10 +25,19 @@
     color: var(--pink);
 }
 
+h1 {
+    font-size: 72px;
+    font-weight: 200;
+}
+
 p {
     font-weight: 100;
     font-size: 16px;
     line-height: 25px;
+}
+
+ul li{
+    list-style: none;
 }
 
 .articles {

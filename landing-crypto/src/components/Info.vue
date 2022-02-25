@@ -25,9 +25,10 @@ export default {
     #info {
         color: var(--white);
         background-color: var(--dark1);
+        display: flex;
     }
     .column {
-        padding: 80px;
+        padding: 60px;
     }
     .column > div {
         border-left: 3px solid var(--dark3);

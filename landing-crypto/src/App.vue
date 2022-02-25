@@ -8,6 +8,7 @@
     <Press />
     <Section />
     <Gallery />
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +21,8 @@ import Section from './components/Section.vue';
 import Press from './components/Press.vue';
 import Gallery from './components/Gallery.vue';
 
+import Footer from './components/Footer.vue';
+
 // import {Graphic} from './assets/graphic.png';
 
 export default {
@@ -31,7 +34,8 @@ export default {
     Featuredin,
     Section,
     Press, 
-    Gallery
+    Gallery,
+    Footer
   }
 }
 </script>
@@ -42,8 +46,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000;
-  margin-top: 40px;
-  /* background: var(--light2); */
+  padding-top: 40px;
+  padding-bottom: 100px;
+  background: var(--light2);
 }
 @import url(./assets/css/root.css);
 </style>

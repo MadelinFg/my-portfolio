@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style scoped>
+    #navbar {
+        display: flex;
+    }
     .logo-div, .navbar-links {
         width: 50%;
         padding: 10px 50px;
@@ -34,8 +37,5 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 0;
-    }
-    ul li{
-        list-style: none;
     }
 </style>

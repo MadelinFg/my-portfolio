@@ -1,5 +1,7 @@
 # landing-crypto 
-## developed by Madelin Flores as a Vue practice
+## Developed by Madelin Flores as a Vue practice
+
+### The design it is not mine, you can find a copy at [figma] (https://www.figma.com/file/mVQNPiuChg5LHWO3wa3VkN/Crypto-App-Finance-Landing---Free-Figma-Web-Page-for-Startups---Web%2FMobile---Light%2FDark-(Community))
 
 ## Project setup
 ```

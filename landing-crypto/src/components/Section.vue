@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div id="section" class="container">
         <div class="text">
             <div class="column">
                 <h1>AI-powered crypto asset investment</h1>
@@ -42,8 +42,7 @@ export default {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 70px;
-        height: 750px;
+        padding: 70px;
         overflow: hidden;
         background: var(--white);
     }

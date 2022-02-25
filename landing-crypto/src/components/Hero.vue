@@ -42,11 +42,9 @@ export default {
 </script>
 
 <style scoped>
-    h1 {
-        font-size: 72px;
-        font-weight: 200;
+    .hero {
+        display: flex;
     }
-
     #welcome {
         padding: 50px;
     }
