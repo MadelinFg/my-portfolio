@@ -62,30 +62,11 @@ export default {
         justify-content: space-between;
         width: 30%;
     }
-    #notified {
-        padding: 7px;
-        background-color: var(--pink);
-        border: none;
-        border-radius: 7px;
-        color: var(--white);
-    }
     #learn-more {
         padding: 7px;
         border: 1px solid var(--dark1);
         border-radius: 7px;
         background-color: transparent;
-    }
-    .articles {
-        margin-top: 70px;
-        display: flex;
-        justify-content: space-between;
-        width: 80%;
-    }
-    .article hr {
-        width: auto;
-    }
-    .article {
-        width: 45%;
     }
     #graphic img {
         width: 80%;

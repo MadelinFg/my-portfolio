@@ -1,13 +1,44 @@
 :root {
     --pink: #DF00A1;
     --green: #3EFFB9;
+    --light2: #EEEEEE;
     --dark1: #111111;
     --dark2: #333333;
     --dark3: #555555;
     --white: #FFFFFF;
 }
 
-#navbar, #hero {
+#navbar, #hero, #info, #logos {
     width: 100%;
     display: flex;
+}
+
+#notified {
+    padding: 5px;
+    background-color: transparent;
+    border: 1px solid var(--pink);
+    border-radius: 7px;
+    color: var(--pink);
+}
+
+p {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.articles {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.article hr {
+    width: 100%;
+}
+.article {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }

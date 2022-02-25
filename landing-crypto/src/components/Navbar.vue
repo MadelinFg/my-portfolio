@@ -38,11 +38,4 @@ export default {
     ul li{
         list-style: none;
     }
-    #notified {
-        padding: 5px;
-        background-color: transparent;
-        border: 1px solid var(--pink);
-        border-radius: 7px;
-        color: var(--pink);
-    }
 </style>
